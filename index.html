@@ -14,21 +14,22 @@
   <nav>
     <a href="#" onclick="cambiarIdioma('es')">ES</a>
     <a href="#" onclick="cambiarIdioma('en')">EN</a>
-    <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+    <a href="carrito.html" class="btn-carrito">Carrito (<span id="contador">0</span>)</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1 id="hero-title">Tecnología que resalta</h1>
   <p id="hero-subtitle">Gadgets modernos para tu vida diaria</p>
+  <a href="#productos" class="button">Ver productos</a>
 </section>
 
-<input type="text" id="buscador" placeholder="Buscar producto...">
+<input type="text" id="buscador" placeholder="Buscar producto..." class="input-buscador">
 
 <section id="productos" class="productos"></section>
 
 <a class="whatsapp" href="https://wa.me/5491132860892" target="_blank">
-  Consultar por WhatsApp
+  <img src="img/whatsapp-logo.png" alt="WhatsApp">
 </a>
 
 <script src="js/productos.js"></script>

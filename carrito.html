@@ -15,22 +15,27 @@
     <a href="index.html">Inicio</a>
     <a href="#" onclick="cambiarIdioma('es')">ES</a>
     <a href="#" onclick="cambiarIdioma('en')">EN</a>
+    <a href="carrito.html" class="btn-carrito">Carrito (<span id="contador">0</span>)</a>
   </nav>
 </header>
 
-<section class="carrito">
-  <h1 id="titulo-carrito">Tu carrito</h1>
-  <div id="lista-carrito"></div>
-
-  <p id="subtotal"></p>
-  <p id="envio"></p>
-  <p id="total"></p>
-
-  <a id="pagar" href="#" target="_blank">Pagar con Mercado Pago</a>
+<section class="hero-carrito">
+  <h1>Tu Carrito</h1>
 </section>
 
-<script src="js/productos.js"></script>
+<section id="carrito-productos" class="carrito-productos">
+  <!-- Aquí se insertan los productos del carrito vía JS -->
+</section>
+
+<div class="carrito-total">
+  <h2>Total: $<span id="total">0</span></h2>
+  <button id="finalizar-compra" class="carrito-btn">Finalizar Compra</button>
+</div>
+
+<a class="whatsapp" href="https://wa.me/5491132860892" target="_blank">
+  <img src="img/whatsapp-logo.png" alt="WhatsApp">
+</a>
+
 <script src="js/carrito.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
