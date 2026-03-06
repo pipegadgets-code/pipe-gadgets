@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #0b0c10;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #121417;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+nav a:hover { color: #ff6a00; }
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 { font-size: 42px; color: #ff6a00; margin-bottom: 10px; }
+.hero p { font-size: 20px; color: #00aaff; }
+
+#buscador {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #00aaff;
+  background: #121417;
+  color: white;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+.producto {
+  background: #1c1c1c;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255, 106, 0, 0.3);
+  transition: 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 106, 0, 0.5);
+}
+
+.producto img { width: 100%; border-radius: 10px; }
+.producto h3 { color: #ff6a00; }
+.producto p { color: #00aaff; }
+
+button {
+  background: #ff6a00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover { background: #ffa040; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+}
