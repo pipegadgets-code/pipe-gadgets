@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carrito - Pipe Gadgets</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="Pipe Gadgets Logo">
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#" onclick="cambiarIdioma('es')">ES</a>
+    <a href="#" onclick="cambiarIdioma('en')">EN</a>
+  </nav>
+</header>
+
+<section class="carrito">
+  <h1 id="titulo-carrito">Tu carrito</h1>
+  <div id="lista-carrito"></div>
+
+  <p id="subtotal"></p>
+  <p id="envio"></p>
+  <p id="total"></p>
+
+  <a id="pagar" href="#" target="_blank">Pagar con Mercado Pago</a>
+</section>
+
+<script src="js/productos.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
